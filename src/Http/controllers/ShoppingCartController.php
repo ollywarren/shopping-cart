@@ -21,7 +21,9 @@ class ShoppingCartController extends BaseController
     {
         if ( session()->has('shopping_cart') ) {
             $shoppingCart = session()->get('shopping_cart');
-            return $shoppingCart;
+            return response($shoppingCart, 200);
+        } else {
+            return response("Not Found", 404);
         }
     }
 
