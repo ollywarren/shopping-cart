@@ -2,6 +2,7 @@
 
 namespace Ollywarren\ShoppingCart\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Ollywarren\ShoppingCart\Facades\ShoppingCart;
 use Illuminate\Routing\Controller as BaseController;
@@ -53,6 +54,6 @@ class ShoppingCartController extends BaseController
             $shoppingCart = session()->put('shopping_cart', $payload);
             return response($shoppingCart, 201);
         }
-        
+
     }
 }
