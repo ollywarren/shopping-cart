@@ -4,7 +4,7 @@ namespace Ollywarren\ShoppingCart\Http\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 
-class Controller extends BaseController
+class ShoppingCartController extends BaseController
 {
     public function test()
     {
