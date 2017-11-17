@@ -42,8 +42,10 @@ class ShoppingCartController extends BaseController
         // Return the Response
     }
 
-    public function updateCurrentCart($payload)
+    public function updateCurrentCart(Request $request)
     {
+        $payload = ['test', 'again', 'here'];
+
         if ( session()->has('shopping_cart') ) {
             $shoppingCart = session()->push('shopping_cart', $payload);
             return response($shoppingCart, 200);
@@ -51,5 +53,6 @@ class ShoppingCartController extends BaseController
             $shoppingCart = session()->put('shopping_cart', $payload);
             return response($shoppingCart, 201);
         }
+        
     }
 }
