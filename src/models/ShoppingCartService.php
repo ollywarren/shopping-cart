@@ -3,6 +3,7 @@
 namespace Ollywarren\ShoppingCart;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Session;
 
 class ShoppingCartService extends Model {
 
@@ -22,4 +23,14 @@ class ShoppingCartService extends Model {
     {
         return "AWESOME THE PACKAGE BINDING WORKS WITH THE FACADE";
     }
+
+    public function updateCart( $payload )
+    {
+
+    }
+
+    public function getCart( $playload )
+    {
+        
+    } 
 }
