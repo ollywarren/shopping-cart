@@ -29,10 +29,27 @@ class ShoppingCartController extends BaseController
 
     public function saveCurrentCart()
     {
+        // Get the Current Cart Session Info
+        // Create a New Model from the Data
+        // Save to the DB
+        // Return Success Message or Failure.
 
     }
 
-    public function updateCurrentCart()
+    public function getSavedCart($id)
     {
+        // Get the Given Cart by ID
+        // Return the Response
+    }
+
+    public function updateCurrentCart($payload)
+    {
+        if ( session()->has('shopping_cart') ) {
+            $shoppingCart = session()->push('shopping_cart', $payload);
+            return response($shoppingCart, 200);
+        } else {
+            $shoppingCart = session()->put('shopping_cart', $payload);
+            return response($shoppingCart, 201);
+        }
     }
 }
