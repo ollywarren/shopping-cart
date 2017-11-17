@@ -1,8 +1,8 @@
 {
     "name": "ollywarren/shopping-cart",
     "description": "Implement a Simple Shopping Cart System in Laravel",
-    "keywords": [],
-    "homepage": "http://github.com/ollywarren/shopping-cart",
+    "keywords": ["laravel", "shopping cart", "e-commerce", "basket"],
+    "homepage": "https://github.com/ollywarren/shopping-cart",
     "license": "MIT",
     "authors": [
         {

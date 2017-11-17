@@ -4,7 +4,7 @@ namespace Ollywarren\ShoppingCart;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ShoppingCart extends Model {
+class ShoppingCartService extends Model {
 
     protected $table = 'shopping_carts';
 

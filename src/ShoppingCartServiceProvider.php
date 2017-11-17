@@ -3,7 +3,7 @@
 namespace Ollywarren\ShoppingCart;
 
 use Illuminate\Support\ServiceProvider;
-use ShoppingCart;
+use Ollywarren\ShoppingCart\ShoppingCartService;
 
 class ShoppingCartServiceProvider extends ServiceProvider
 {
@@ -40,7 +40,7 @@ class ShoppingCartServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind('ShoppingCart', function ($app) {
-            return new ShoppingCart();
+            return new ShoppingCartService();
         });
     }
 }
