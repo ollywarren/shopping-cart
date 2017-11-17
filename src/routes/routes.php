@@ -1,2 +1,2 @@
 <?php
-Route::get('cart/test', 'Ollywarren\ShoppingCart\Http\Controllers\ShoppingCartController@test');
+Route::get('cart/current', 'Ollywarren\ShoppingCart\Http\Controllers\ShoppingCartController@getCurrentCart');

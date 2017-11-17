@@ -3,8 +3,15 @@
 namespace Ollywarren\ShoppingCart;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Session;
 
+/**
+ * Model for the Shopping Cart Service.
+ * 
+ * @author Olly Warren <olly@ollywarren.com>
+ * @package Ollywarren\ShoppingCart
+ * @version 1.0
+ * @license MIT
+ */
 class ShoppingCartService extends Model {
 
     protected $table = 'shopping_carts';
@@ -17,20 +24,5 @@ class ShoppingCartService extends Model {
     public function __construct()
     {
 
-    }
-
-    public function test()
-    {
-        return "AWESOME THE PACKAGE BINDING WORKS WITH THE FACADE";
-    }
-
-    public function updateCart( $payload )
-    {
-
-    }
-
-    public function getCart( $playload )
-    {
-        
     } 
 }
