@@ -1,0 +1,35 @@
+{
+    "name": "ollywarren/shopping-cart",
+    "description": "Implement a Simple Shopping Cart System in Laravel",
+    "keywords": [],
+    "homepage": "http://github.com/ollywarren/shopping-cart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olly Warren",
+            "email": "olly@ollywarren.com"
+        }
+    ],
+    "require-dev":{},
+    "require":{
+        "phpunit/phpunit":"^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ollywarren\\ShoppingCart\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ollywarren\\ShoppingCart\\ShoppingCartServiceProvider"
+            ],
+
+            "facades": [
+                "Ollywarren\\ShoppingCart\\Facades\\ShoppingCart"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
